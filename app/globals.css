@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #162B4D;
+  --teal: #2BB3A6;
+  --teal-soft: #5FD0C5;
+  --white: #FFFFFF;
+  --charcoal: #2F2F2F;
+  --border-light: #E6EEF3;
+}
+
+@layer base {
+  * {
+    @apply border-[#E6EEF3];
+  }
+  body {
+    @apply bg-white text-[#2F2F2F];
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-[#162B4D];
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
